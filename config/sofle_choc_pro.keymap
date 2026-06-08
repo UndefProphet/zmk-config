@@ -38,25 +38,36 @@
         ctr_alt_f1: ctr_alt_f1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LCTRL &kt LEFT_ALT &kp F1>, <&macro_release>;
-
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp F1 &kt LEFT_ALT &kt LCTRL>;
             label = "CTR_ALT_F1";
         };
 
         ctr_alt_f2: ctr_alt_f2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LCTRL &kt LEFT_ALT &kp F2>, <&macro_release>;
-
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp F2 &kt LEFT_ALT &kt LCTRL>;
             label = "CTR_ALT_F2";
         };
 
         ctr_alt_f3: ctr_alt_f3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LCTRL &kt LEFT_ALT &kp F3>, <&macro_release>;
-
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp F3 &kt LEFT_ALT &kt LCTRL>;
             label = "CTR_ALT_F3";
+        };
+
+        ctr_alt_f4: ctr_alt_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp F4 &kt LEFT_ALT &kt LCTRL>;
+            label = "CTR_ALT_F4";
+        };
+
+        ctr_alt_f5: ctr_alt_f5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp F5 &kt LEFT_ALT &kt LCTRL>;
+            label = "CTR_ALT_F5";
         };
     };
 
@@ -146,11 +157,11 @@
 
         tty-switch {
             bindings = <
-&trans  &ctr_alt_f1  &ctr_alt_f2  &ctr_alt_f3  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans       &trans       &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans       &trans       &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &ctr_alt_f1  &ctr_alt_f2  &ctr_alt_f3  &ctr_alt_f4  &ctr_alt_f5                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans       &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans       &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                     &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
